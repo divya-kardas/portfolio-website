@@ -506,3 +506,47 @@ b, strong {
 input { height: 50px; }
 .tm-contact p { padding-top: 40px; }
 /* END CONTACT */
+
+@media only screen and (max-width: 600px) {
+  /* Adjust styles for smaller screens */
+  .your-image-class {
+      width: 100%; /* or adjust width as needed */
+      margin: 0;   /* or adjust margin as needed */
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.your-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.your-image-class {
+  margin-bottom: 10px; /* or adjust as needed */
+}
+
+.image-container {
+  margin-bottom: 10px; /* or adjust as needed */
+}
+
+
+/* Default styles for buttons */
+.your-button {
+  padding: 10px 20px; /* Adjust padding as needed */
+}
+
+/* Adjust distances between buttons in mobile mode */
+@media only screen and (max-width: 600px) {
+  .button-container {
+      display: flex;
+      flex-direction: column; /* Stack buttons vertically in mobile mode */
+  }
+
+  .your-button {
+      margin-bottom: 10px; /* Adjust margin between buttons as needed */
+  }
+}
